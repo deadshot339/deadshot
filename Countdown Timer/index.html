@@ -8,7 +8,16 @@
 </head>
 <body>
     <div class="hourglassimage"></div>
-    <div class="box"></div>
+    <div class="box">
+        <h1>Countdown Timer</h1>
+        <div class="countdown">
+            <span id="display">00:00:00</span>
+        </div>
+        <input type="number" id="hours" min="0">
+        <input type="number" id="min" min="0" max="59">
+        <input type="number" id="sec" min="0" max="59"><br>
+        <button type="submit" id="submit" onclick="startTimer()">Start Timer</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
